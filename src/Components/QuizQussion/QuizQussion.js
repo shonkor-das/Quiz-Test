@@ -15,7 +15,6 @@ const QuizQussion = () => {
        {
         quss.map(qus => <QuizList qus={qus} key={qus.id} questions={qussions}></QuizList>) 
        }
-       
     </div>
   </div>
   );
