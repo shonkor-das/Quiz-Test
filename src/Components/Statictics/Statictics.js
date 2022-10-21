@@ -3,14 +3,12 @@ import { useLoaderData } from 'react-router-dom';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 const Statictics = () => {
-
   let total = useLoaderData();
   let totals = total.data
   console.log(totals)
   return (
     <div>
       <h2>Statictics</h2>
-
           <LineChart
           width={window.innerWidth -20}
           height={window.innerHeight/2}
@@ -28,9 +26,8 @@ const Statictics = () => {
           <Tooltip />
           <Legend />
           <Line type="monotone" dataKey="total" stroke="#23A9F2" activeDot={{ r: 8 }} />
-          
         </LineChart> 
-</div>
+    </div>
   );
 };
 
