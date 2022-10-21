@@ -3,7 +3,6 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    
       <nav class=" navbar navbar-expand-lg bg-light">
         <div class="container">
         <Link className="navbar-brand text-info fw-bold" href="#">Quiz Test</Link>
@@ -16,11 +15,9 @@ const Navbar = () => {
               <NavLink className="nav-link  fw-bold ms-3" to='statictics'>Statistics</NavLink>
               <NavLink className="nav-link fw-bold ms-3" to='block'>Blog</NavLink>
             </ul>
-
           </div>
         </div>
       </nav>
-    
   );
 };
 

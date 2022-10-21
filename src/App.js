@@ -9,7 +9,6 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Blog from './Components/Blog/Blog';
 
-
 function App() {
   let router = createBrowserRouter([
     {
@@ -30,8 +29,7 @@ function App() {
           } ,        
            element: <Home></Home>
 
-        },
-          
+        },  
         {
           path: '/quiz/:quizId',
           loader: async ({params}) => {
@@ -39,7 +37,6 @@ function App() {
           },
           element: <QuizQussion ></QuizQussion>
         },
-
         {
           path: '/statictics',
           loader: async() => {
@@ -47,7 +44,6 @@ function App() {
           },
           element: <Statictics></Statictics>
         },
-
         {
           path: '/block',
           element: <Blog></Blog>
@@ -58,7 +54,6 @@ function App() {
       path: '*',
       element: <h3>Route is not found</h3>
     }
-
   ])
   return (
     <div className="App">
